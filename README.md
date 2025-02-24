@@ -30,18 +30,64 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 
 
 ## PROGRAM (MicroPython)
+## LED BLINK:
+```
+from machine import Pin
+from utime import sleep
 
+print("Hello, Pi Pico!")
 
- 
+led = Pin(0,Pin.OUT)
+while True:
+  led.toggle()
+  sleep(0.5)
+```
+## LED TOGGLE:
+```
+from machine import Pin
+from utime import sleep
 
+led1 = Pin(0, Pin.OUT)
+led2 = Pin(1, Pin.OUT)
+led3 = Pin(2, Pin.OUT)
+while True:
+    led1.toggle()
+    sleep(0.5)
+    led2.toggle()
+    sleep(0.5)
+    led3.toggle()
+    sleep(0.5)
+```
+## LED WITH BUZZER:
+```
+from machine import Pin
+from utime import sleep
 
+print("Hello, Pi Pico!")
 
- 
-
-
+led1 = Pin(0,Pin.OUT)
+led2 = Pin(1,Pin.OUT)
+led3 = Pin(2,Pin.OUT)
+buzz = Pin(3,Pin.OUT)
+while True:
+  led1.toggle()
+  sleep(0.5)
+  buzz.toggle()
+  sleep(0.5)
+  led2.toggle()
+  sleep(0.5)
+  led3.toggle()
+  sleep(0.5)
+```
 ## OUPUT  
+## LED BLINK:
+![Screenshot 2025-02-24 113645](https://github.com/user-attachments/assets/b5202ebc-855e-4206-898a-87d6f89146a3)
 
+## LED TOGGLE:
+![Screenshot 2025-02-24 104526](https://github.com/user-attachments/assets/b6587cbc-4c7a-4c81-bf97-5dcd1c726cc6)
 
+## LED WITH BUZZER:
+![image](https://github.com/user-attachments/assets/02000313-b0e9-471e-9024-c5347bf66187)
 
  
 ## RESULTS
