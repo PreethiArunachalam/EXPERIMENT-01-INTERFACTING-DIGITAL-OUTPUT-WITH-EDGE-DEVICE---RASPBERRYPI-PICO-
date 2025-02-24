@@ -1,13 +1,13 @@
 # EXPERIMENT-01-INTERFACTING-DIGITAL-OUTPUT-WITH-EDGE-DEVICE---RASPBERRYPI-PICO-
-## NAME 
-## DEPARTMENT 
-## ROLL NO 
-## DATE OF EXPERIMENT 
+## NAME: PREETHI A A 
+## DEPARTMENT: CSE(IoT) 
+## ROLL NO: 212222110035 
+## DATE OF EXPERIMENT: 24/02/2025 
 
 ### AIM
 To interface a digital output device (LED) with the Raspberry Pi Pico and control it using MicroPython.
 
-APPARATUS REQUIRED
+## APPARATUS REQUIRED
 Raspberry Pi Pico
 LED (Light Emitting Diode)
 330Ω Resistor
